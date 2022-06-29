@@ -1,0 +1,23 @@
+{
+	"media": [{
+			"id": "mtHq4hDv",
+			"type": ["watch", "listen"],
+			"poster": "/images/messages/benedictions.jpg",
+			"thumbnail": "/images/thumbnails/benedictions.png",
+			"duration": "5 mins 22 secs",
+			"name": "Benedictions",
+			"captions": ["English", "French"],
+			"description": "A benediction is an invocation of blessings, usually in words of prayer. In this insightful teaching by Pastor Chris, learn more on the meaning of a benediction, who can bestow a benediction, and the power of a benediction."
+		},
+		{
+			"id": "THGtusFW",
+			"type": ["video"],
+			"poster": "/images/messages/light.jpg",
+			"thumbnail": "/images/messages/light.jpg",
+			"duration": "2 mins",
+			"name": "The Light Of Life",
+			"captions": ["English"],
+			"description": "The Word of God is light, and that light lightens every darkness. There’re mysteries and secrets about life, and the anointing of God’s Spirit has come upon us to guide us into the mysteries and secrets of God through the Word. Find out from this special teaching by Pastor Chris the purpose of the Word of God in your life."
+		}
+	]
+}
