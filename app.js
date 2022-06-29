@@ -120,6 +120,4 @@ app.get("/media/:id/audio", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log("Listening on port 4000!");
-});
+app.listen(process.env.PORT || 5000);
