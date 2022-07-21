@@ -19,18 +19,21 @@ const media = [
     id: "yM7uLK6T",
     poster: "/images/messages/glory.jpg",
     duration: "4 mins",
+    captions: ["English", "French"],
     name: "Our Calling To Glory",
   },
   {
     id: "WN3pTqt3",
     poster: "/images/messages/dew_of_heaven.jpg",
     duration: "2 mins",
+    captions: ["English", "French"],
     name: "The Dew Of Heaven",
   },
   {
     id: "xTHtfK9z",
     poster: "/images/messages/the_power_pursuit_purpose.jpg",
     duration: "2 mins",
+    captions: ["English", "French"],
     name: "The Power & Pursuit Of Purpose",
   },
   {
@@ -40,7 +43,7 @@ const media = [
     thumbnail: "/images/messages/light.jpg",
     duration: "2 mins",
     name: "The Light Of Life",
-    captions: ["English"],
+    captions: ["English", "French"],
     description:
       "The Word of God is light, and that light lightens every darkness. There’re mysteries and secrets about life, and the anointing of God’s Spirit has come upon us to guide us into the mysteries and secrets of God through the Word. Find out from this special teaching by Pastor Chris the purpose of the Word of God in your life.",
   },
