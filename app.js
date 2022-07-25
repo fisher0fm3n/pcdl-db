@@ -6,7 +6,7 @@ const cors = require("cors");
 const playlists = {
     new_releases: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
     trending: ["AXUFHus", "GDUgdub", "eZYUkis", "iPIFnfs", "ZGDUgdub", "OifnEBy"],
-    freebies: ["fGDRuko", "ZGDUgdub", "iPIFnfs", "OifnEBy", "WN3pTqt3", "AXUFHus"],
+    freebies: ["WN3pTqt3", "AXUFHus", "iPIFnfs", "OifnEBy", "fGDRuko", "ZGDUgdub"],
   };
 
 
