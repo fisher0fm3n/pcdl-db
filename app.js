@@ -3,6 +3,11 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 
+const playlists = {
+    new_releases: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+  };
+
+
 const media = [
   {
     id: "mtHq4hDv",
@@ -134,6 +139,8 @@ const app = express();
 app.use(cors());
 
 app.get("/media", (req, res) => res.json(media));
+
+app.get("/playlists", (req, res) => res.json(playlists));
 
 app.get("/media/:id/data", (req, res) => {
   const id = req.params.id;
