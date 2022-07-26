@@ -82,6 +82,7 @@ const media = [
   {
     id: "yM7uLK6T",
     poster: "/images/messages/glory.jpg",
+    thumbnail: "/images/messages/glory.jpg",
     duration: "4 mins",
     captions: ["English", "French"],
     title: "Our Calling To Glory",
@@ -89,6 +90,7 @@ const media = [
   {
     id: "WN3pTqt3",
     poster: "/images/messages/dew_of_heaven.jpg",
+    thumbnail: "/images/messages/dew_of_heaven.jpg",
     duration: "2 mins",
     captions: ["English", "French"],
     title: "The Dew Of Heaven",
@@ -96,6 +98,7 @@ const media = [
   {
     id: "xTHtfK9z",
     poster: "/images/messages/the_power_pursuit_purpose.jpg",
+    thumbnail: "/images/messages/the_power_pursuit_purpose.jpg",
     duration: "2 mins",
     captions: ["English", "French"],
     title: "The Power & Pursuit Of Purpose",
