@@ -7,6 +7,7 @@ const lists = {
     new_releases: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
     trending: ["AXUFHus", "GDUgdub", "eZYUkis", "iPIFnfs", "ZGDUgdub", "OifnEBy"],
     freebies: ["WN3pTqt3", "AXUFHus", "iPIFnfs", "OifnEBy", "fGDRuko", "ZGDUgdub"],
+    featured_playlists: ["vdONb7OZ", "v40kLvXY", "dB2w3OAj", "M5KSdXD9", "GBaeQBNb", "BGnUZnQj"],
   };
 
   const playlists = [
@@ -199,6 +200,8 @@ app.use(cors());
 app.get("/media", (req, res) => res.json(media));
 
 app.get("/lists", (req, res) => res.json(lists));
+
+app.get("/playlists", (req, res) => res.json(playlists));
 
 app.get("/playlists/:id/data", (req, res) => {
   const id = req.params.id;
