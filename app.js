@@ -200,9 +200,9 @@ app.get("/media", (req, res) => res.json(media));
 
 app.get("/lists", (req, res) => res.json(lists));
 
-app.get("/playlist/:id/data", (req, res) => {
+app.get("/playlists/:id/data", (req, res) => {
   const id = req.params.id;
-  res.json(playlist.find((x) => x.id === id));
+  res.json(playlists.find((x) => x.id === id));
 });
 
 app.get("/media/:id/data", (req, res) => {
