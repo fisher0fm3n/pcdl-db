@@ -3,12 +3,68 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 
-const playlists = {
+const lists = {
     new_releases: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
     trending: ["AXUFHus", "GDUgdub", "eZYUkis", "iPIFnfs", "ZGDUgdub", "OifnEBy"],
     freebies: ["WN3pTqt3", "AXUFHus", "iPIFnfs", "OifnEBy", "fGDRuko", "ZGDUgdub"],
   };
 
+  const playlists = [
+    {
+      id: "vdONb7OZ",
+      role: "admin",
+      author: "desmond",
+      title: "Word Of The Month",
+      image: "/images/playlists/0.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    {
+      id: "v40kLvXY",
+      role: "admin",
+      author: "desmond",
+      title: "Spiritual Growth",
+      image: "/images/playlists/1.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    {
+      id: "dB2w3OAj",
+      role: "admin",
+      author: "desmond",
+      title: "Praise Night",
+      image: "/images/playlists/2.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    {
+      id: "M5KSdXD9",
+      role: "admin",
+      author: "desmond",
+      title: "Walking In The Spirit",
+      image: "/images/playlists/3.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    {
+      id: "GBaeQBNb",
+      role: "admin",
+      author: "desmond",
+      title: "Righteousness",
+      image: "/images/playlists/4.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    {
+      id: "BGnUZnQj",
+      role: "admin",
+      author: "desmond",
+      title: "Excellence",
+      image: "/images/playlists/5.png",
+      description: "God is going to bless the works of your hands and you are going to be so productive — Pastor Chris Oyakhilome. Great rejoicing by the global congregation, followed the declaration of July to be ‘the Month of Productivity’ by Pastor Chris at the just concluded Global Communion Service.",
+      list: ["mtHq4hDv", "yM7uLK6T", "WN3pTqt3", "xTHtfK9z", "FGKdfiu", "eZYUkis"],
+    },
+    ];
 
 const media = [
   {
@@ -142,7 +198,12 @@ app.use(cors());
 
 app.get("/media", (req, res) => res.json(media));
 
-app.get("/playlists", (req, res) => res.json(playlists));
+app.get("/lists", (req, res) => res.json(lists));
+
+app.get("/playlist/:id/data", (req, res) => {
+  const id = req.params.id;
+  res.json(playlist.find((x) => x.id === id));
+});
 
 app.get("/media/:id/data", (req, res) => {
   const id = req.params.id;
