@@ -405,7 +405,7 @@ app.get("/playlists/:id/data", (req, res) => {
   res.json(playlists.find((x) => x.id === id));
 });
 
-app.get("/media/:category/data", (req, res) => {
+app.get("/category/:category/data", (req, res) => {
   const category = req.params.category;
   res.json(media.filter((x) => x.tags.includes(category)));
 });
