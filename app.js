@@ -141,7 +141,7 @@ const media = [
     id: "mtHq4hDv",
     type: ["watch", "listen"],
     poster: "/images/messages/benedictions.jpg",
-    thumbnail: "/images/thumbnails/benedictions.png",
+    thumbnail: "/images/messages/benedictions.jpg",
     duration: "5 mins 22 secs",
     title: "Benedictions",
     captions: ["English", "French"],
@@ -212,6 +212,7 @@ const media = [
       "questions_and_answers",
       "freebies",
     ],
+    description: "What is your purpose in life? Why do you do what you do? What’s your driving force? There are those who are motivated by anger, resentment, guilt and the desire for approval and because of these they never do much with God. The Word of God is the true light that tells right from wrong. In this special teaching by Pastor Chris Oyakhilome DSc, DD, you’ll get to understand how to live for a higher purpose that is beyond this world.",
   },
   {
     id: "THGtusFW",
