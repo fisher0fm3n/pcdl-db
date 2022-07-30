@@ -404,7 +404,7 @@ const media = [
         title: "Your Loveworld Specials Season 1",
         poster: "/images/messages/ylw.jpg",
         description: "Season 1 Of your loveworld Specials",
-        messages: {
+        messages: [
           {
             id: "Dgf8GR8",
             type: ["watch"],
@@ -425,7 +425,7 @@ const media = [
             description:
               "In this message, Pastor Chris expatiates that in Christ, both Jews and gentiles now have access to the father by one Spirit making both fellow citizens of the household of God. Get to know from this message, who the bride of Christ is.",
           },
-        }
+        ],
       }
     ],
   },
