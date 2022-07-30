@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const lists = {
   new_releases: [
+    "AtldiyT",
     "mtHq4hDv",
     "yM7uLK6T",
     "WN3pTqt3",
