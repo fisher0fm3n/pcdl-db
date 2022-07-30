@@ -379,6 +379,7 @@ const media = [
   {
     id: "AtldiyT",
     type: ["watch"],
+    series: true,
     poster: "/images/messages/ylw.jpg",
     thumbnail: "/images/messages/ylw.jpg",
     duration: "2 mins",
@@ -396,6 +397,36 @@ const media = [
       "evangelism",
       "soul_winning",
       "your_loveworld_specials",
+    ],
+    seasons: [
+      {
+        id: "0",
+        title: "Your Loveworld Specials Season 1",
+        poster: "/images/messages/ylw.jpg",
+        description: "Season 1 Of your loveworld Specials",
+        messages: {
+          {
+            id: "Dgf8GR8",
+            type: ["watch"],
+            poster: "/images/messages/light.jpg",
+            thumbnail: "/images/messages/light.jpg",
+            title: "Your Loveworld Specials Season 1 Phase 1 - Day 1",
+            captions: ["English", "French"],
+            description:
+              "In this episode of Your LoveWorld Specials with Pastor Chris Oyakhilome DSc, DD, expounds on the Mystery of Christ. You will understand from this message who Christ is, His life, nature, power and glory which he came to manifest in the earth through His Church.",
+          },
+          {
+            id: "ik4gwRt",
+            type: ["watch"],
+            poster: "/images/messages/light.jpg",
+            thumbnail: "/images/messages/light.jpg",
+            title: "Your Loveworld Specials Season 1 Phase 1 - Day 2",
+            captions: ["English", "French"],
+            description:
+              "In this message, Pastor Chris expatiates that in Christ, both Jews and gentiles now have access to the father by one Spirit making both fellow citizens of the household of God. Get to know from this message, who the bride of Christ is.",
+          },
+        }
+      }
     ],
   },
   {
