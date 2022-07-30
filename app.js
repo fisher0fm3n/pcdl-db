@@ -376,6 +376,28 @@ const media = [
     ],
   },
   {
+    id: "AtldiyT",
+    type: ["watch"],
+    poster: "/images/messages/ylw.jpg",
+    thumbnail: "/images/messages/ylw.jpg",
+    duration: "2 mins",
+    title: "Your Loveworld Specials",
+    captions: ["English", "French"],
+    description:
+      "The Church of Jesus Christ has come to a place of maturity and authority. We have a responsibility as the body of Christ to determine the next world order; preserve the Churches of Christ from decimation by the deep state and hold fast the right to preach the gospel of Jesus Christ freely in all nations. Pastor Chris reveals the works of the deep state as they run nations for their own private benefit. The man of God exposes the plans for the reduction of Africa’s population by globalists’ organizations through vaccines and policies; and he advises the leaders in Africa to rise up to their responsibility and carry our independent research that will save guard their nations. You will discover from this message that the wearing of masks doesn’t save rather, it kills slowly.",
+    tags: [
+      "holy_spirit",
+      "christian_living",
+      "faith",
+      "health_and_healing",
+      "prayer",
+      "church_growth",
+      "evangelism",
+      "soul_winning",
+      "your_loveworld_specials",
+    ],
+  },
+  {
     id: "fGDRuko",
     type: ["watch"],
     poster: "/images/messages/giving_thanks.jpg",
