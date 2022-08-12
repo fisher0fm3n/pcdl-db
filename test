@@ -1,0 +1,1 @@
+{"_id":{"$oid":"621ff30d2a3e781873fcb65c"},"name":"Mercury","orderFromSun":{"$numberInt":"1"},"hasRings":false,"mainAtmosphere":[],"surfaceTemperatureC":{"min":{"$numberInt":"-173"},"max":{"$numberInt":"427"},"mean":{"$numberInt":"67"}}}
