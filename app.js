@@ -50,7 +50,7 @@ const Series = [
      {
       // SeriesID: 'bni8yt6',
       SeasonID: 0,
-      SeasonTitle: 'The Power and Pursuit of Purpose',
+      SeasonTitle: 'Volume 1',
       Messages: [
         {
           // SeasonID: 0,
@@ -59,7 +59,7 @@ const Series = [
           MessageDescription: 'What is your purpose in life? Why do you do what you do? What’s your driving force? There are those who are motivated by anger, resentment, guilt and the desire for approval and because of these they never do much with God. The Word of God is the true light that tells right from wrong. In this special teaching by Pastor Chris Oyakhilome DSc, DD, you’ll get to understand how to live for a higher purpose that is beyond this world.',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
-          MessagePoster: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
+          MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
             video: {
               AlbumPrice: 10,
@@ -74,7 +74,7 @@ const Series = [
           MessageDescription: 'Did you know that everything about your outward appearance was given to you so that you can communicate with this world and fight the fight of faith? If any man be in Christ, he is a new creature; one who never existed before with a constantly changing glory by the Word. Find out from this series on the Power and Pursuit of Purpose how to walk in the light of the Word that causes you to fulfill the will of Father for your life.',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
-          MessagePoster: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
+          MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
             video: {
               AlbumPrice: 10,
@@ -87,7 +87,7 @@ const Series = [
      {
       // SeriesID: 'bni8yt6',
       SeasonID: 1,
-      SeasonTitle: 'Misc',
+      SeasonTitle: 'Volume 2',
       Messages: [
         {
           // SeasonID: 0,
@@ -96,7 +96,7 @@ const Series = [
           MessageDescription: 'In our pursuit of purpose, the Lord has put his wisdom in our mouths, which the adversaries will not be able to gainsay nor resist. In this teaching, Pastor Chris Oyakhilome DSc, DD expounds on the value of communicating clearly and with purity, so that everyone would read and understand quickly the gospel. Get to know from this message how a Christian can live victoriously in this life.',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
-          MessagePoster: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
+          MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
             video: {
               AlbumPrice: 10,
@@ -111,7 +111,7 @@ const Series = [
           MessageDescription: 'What shall it profit a man, if he shall gain the whole world and lose his soul? What shall a man give in exchange for his soul (Mark 8:36-37)? Real satisfaction is in the soul, not in the brain or money. When your soul is in oneness with God, you can rejoice in His accomplishments through you. You will understand from this message by Pastor Chris, the Power of Resources, Faith and Focus in fulfilling your purpose in the kingdom.',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
-          MessagePoster: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
+          MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
             video: {
               AlbumPrice: 10,
@@ -126,7 +126,7 @@ const Series = [
           MessageDescription: 'Did you know that Jesus cares whether or not you love Him? The scriptures tell us the one who loves Jesus will keep his word (John 14:23).  Your life is made by the Word and for the Word. Find out from this teaching by Pastor Chris Oyakhilome DSc, DD, what your purpose in life is and how to fulfill God’s plan for your life as you walk in the light of the Word of God.',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
-          MessagePoster: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
+          MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
             video: {
               AlbumPrice: 10,
