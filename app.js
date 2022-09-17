@@ -32,7 +32,13 @@ const lists = {
   ],
 };
 
-
+const history = [
+  {
+    SeriesID: 'bni8yt6',
+    AlbumID: '443294a3f31c4742657232124dfbcaf7',
+    Timer: '42.71',
+  }
+]
 //3 Tables -> Series, Seasons & Messages
 const Series = [
   {
