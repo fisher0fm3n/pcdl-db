@@ -725,7 +725,7 @@ app.get('/playlists', (req, res) => res.json(playlists));
 
 app.get('/quiz', (req, res) => res.json(quiz_data));
 
-app.get('/series', (req, res) => res.json(series));
+app.get('/series', (req, res) => res.json(Series));
 
 
 app.get('/history/:id', (req, res) => {
