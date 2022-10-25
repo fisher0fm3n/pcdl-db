@@ -725,6 +725,9 @@ app.get('/playlists', (req, res) => res.json(playlists));
 
 app.get('/quiz', (req, res) => res.json(quiz_data));
 
+app.get('/series', (req, res) => res.json(series));
+
+
 app.get('/history/:id', (req, res) => {
   const id = req.params.id;
   res.json(history.find((x) => x.SeriesID === id));
