@@ -43,8 +43,10 @@ const history = [
 const Series = [
   {
     id: 'bni8yt6',
-    SeriesAuthor: 'gardrox@gmail.com',
+    SeriesAuthor: 'Bro Desmond',
+    SeriesAuthorEmail: 'gardrox@gmail.com',
     SeriesStatus: 'Published',
+    SeriesTimestamp: '2012-04-23T18:25:43.511Z',
     SeriesTitle: 'The Power and Pursuit of Purpose',
     SeriesDescription: 'You shall receive power after the Holy Ghost comes upon you.',
     SeriesCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
@@ -54,7 +56,6 @@ const Series = [
       'christian_living',
       'faith',
     ],
-    SeriesUpdated: '2012-04-23T18:25:43.511Z',
     Seasons: [
      {
       // SeriesID: 'bni8yt6',
