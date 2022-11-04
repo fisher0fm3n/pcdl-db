@@ -907,6 +907,14 @@ app.get('/series/:id', (req, res) => {
   res.json(Series.find((x) => x.id === id));
 });
 
+app.get('/series/season/:SeriesId/:SeasonId', (req, res) => {
+  const SeriesId = req.params.SeriesId;
+  const SeasonId = req.params.SeasonId;
+  const seriesObj = Series.find((x) => x.id === SeriesId);
+  res.json(seriesObj.find((x) => x.SeasonID === SeasonId));
+});
+
+
 app.get('/quiz/:id/data', (req, res) => {
   const id = req.params.id;
   res.json(quiz_data.find((x) => x.id === id));
