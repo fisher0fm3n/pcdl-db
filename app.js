@@ -907,7 +907,7 @@ app.get('/series/:id', (req, res) => {
   res.json(Series.find((x) => x.id === id));
 });
 
-app.get('/series/season/:SeriesId/:SeasonId', (req, res) => {
+app.get('/series/:SeriesId/:SeasonId', (req, res) => {
   const SeriesId = req.params.SeriesId;
   const SeasonId = req.params.SeasonId;
   const seriesObj = Series.find((x) => x.id === SeriesId);
