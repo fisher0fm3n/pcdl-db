@@ -179,7 +179,7 @@ const Series = [
   },
   {
     id: 'z6hkbui',
-    SeriesAuthor: 'Bro Desmond',
+    SeriesAuthor: 'Pastor Star',
     SeriesAuthorEmail: 'gardrox@gmail.com',
     SeriesStatus: 'Published',
     SeriesLastUpdated: '2012-04-23T18:25:43.511Z',
@@ -201,7 +201,7 @@ const Series = [
       SeasonStatus: 'Published',
       SeasonCreation: '2012-04-23T18:25:43.511Z',
       SeasonLastUpdated: '2012-04-23T18:25:43.511Z',
-      SeasonAuthor: 'Bro Desmond',
+      SeasonAuthor: 'Pastor Star',
       Messages: [
         {
           // SeasonID: 0,
@@ -212,7 +212,7 @@ const Series = [
           MessageStatus: 'Published',
           MessageCreation: '2012-04-23T18:25:43.511Z',
           MessageLastUpdated: '2012-04-23T18:25:43.511Z',
-          MessageAuthor: 'Bro Desmond',
+          MessageAuthor: 'Pastor Star',
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
           MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
@@ -230,7 +230,7 @@ const Series = [
           MessageStatus: 'Published',
           MessageCreation: '2012-04-23T18:25:43.511Z',
           MessageLastUpdated: '2012-04-23T18:25:43.511Z',
-          MessageAuthor: 'Bro Desmond',
+          MessageAuthor: 'Pastor Star',
           MessageCaptions: ['English', 'French'],
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
           MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
@@ -250,7 +250,7 @@ const Series = [
       SeasonStatus: 'Published',
       SeasonCreation: '2012-04-23T18:25:43.511Z',
       SeasonLastUpdated: '2012-04-23T18:25:43.511Z',
-      SeasonAuthor: 'Bro Desmond',
+      SeasonAuthor: 'Pastor Star',
       Messages: [
         {
           // SeasonID: 0,
@@ -261,7 +261,7 @@ const Series = [
           MessageStatus: 'Published',
           MessageCreation: '2012-04-23T18:25:43.511Z',
           MessageLastUpdated: '2012-04-23T18:25:43.511Z',
-          MessageAuthor: 'Bro Desmond',
+          MessageAuthor: 'Pastor Star',
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
           MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
@@ -280,7 +280,7 @@ const Series = [
           MessageStatus: 'Published',
           MessageCreation: '2012-04-23T18:25:43.511Z',
           MessageLastUpdated: '2012-04-23T18:25:43.511Z',
-          MessageAuthor: 'Bro Desmond',
+          MessageAuthor: 'Pastor Star',
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
           MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
@@ -299,7 +299,7 @@ const Series = [
           MessageStatus: 'Published',
           MessageCreation: '2012-04-23T18:25:43.511Z',
           MessageLastUpdated: '2012-04-23T18:25:43.511Z',
-          MessageAuthor: 'Bro Desmond',
+          MessageAuthor: 'Pastor Star',
           MessageCover: 'https://dr9op7qw3y7b0.cloudfront.net/albums/64f7e2fee067a5414a183b812a96232b/the_power_and_pursuit_of_purpose.jpg',
           MessagePoster: 'https://i.postimg.cc/FHrs7QQ9/Screenshot-20180719-1001102-660x330.png',
           MessageMedia: {
@@ -911,7 +911,7 @@ app.get('/series/:SeriesId/:SeasonId', (req, res) => {
   const SeriesId = req.params.SeriesId;
   const SeasonId = req.params.SeasonId;
   const seriesObj = Series.find((x) => x.id === SeriesId);
-  res.json(seriesObj.find((x) => x.SeasonID === SeasonId));
+  res.json(seriesObj.Seasons.find((x) => x.SeasonID == SeasonId));
 });
 
 
