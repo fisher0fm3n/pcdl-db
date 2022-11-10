@@ -914,6 +914,16 @@ app.get('/series/:SeriesId/:SeasonId', (req, res) => {
   res.json(seriesObj.Seasons.find((x) => x.SeasonID == SeasonId));
 });
 
+app.get('/series/:SeriesId/:SeasonId/:MessageId', (req, res) => {
+  const SeriesId = req.params.SeriesId;
+  const SeasonId = req.params.SeasonId;
+  const MessageId = req.params.MessageId;
+
+  const seriesObj = Series.find((x) => x.id === SeriesId);
+  const seasonObj = seriesObj.Seasons.find((x) => x.SeasonID == SeasonId);
+  res.json(seasonObj.Messages.find((x) => x.MessageID == MessageId));
+});
+
 
 app.get('/quiz/:id/data', (req, res) => {
   const id = req.params.id;
