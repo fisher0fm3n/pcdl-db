@@ -1,7 +1,12 @@
+require('dotenv').config();
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+const mongoose = require('mongoose')
+
+const seriesRoutes = require('./routes/series');
 
 const lists = {
   new_releases: [
@@ -886,6 +891,10 @@ const app = express();
 
 app.use(cors());
 
+app.use(express.json());
+
+app.use('/series', seriesRoutes);
+
 app.get('/media', (req, res) => res.json(media));
 
 app.get('/lists', (req, res) => res.json(lists));
@@ -894,36 +903,10 @@ app.get('/playlists', (req, res) => res.json(playlists));
 
 app.get('/quiz', (req, res) => res.json(quiz_data));
 
-app.get('/series', (req, res) => res.json(Series));
-
-
 app.get('/history/:id', (req, res) => {
   const id = req.params.id;
   res.json(history.find((x) => x.SeriesID === id));
 });
-
-app.get('/series/:id', (req, res) => {
-  const id = req.params.id;
-  res.json(Series.find((x) => x.id === id));
-});
-
-app.get('/series/:SeriesId/:SeasonId', (req, res) => {
-  const SeriesId = req.params.SeriesId;
-  const SeasonId = req.params.SeasonId;
-  const seriesObj = Series.find((x) => x.id === SeriesId);
-  res.json(seriesObj.Seasons.find((x) => x.SeasonID == SeasonId));
-});
-
-app.get('/series/:SeriesId/:SeasonId/:MessageId', (req, res) => {
-  const SeriesId = req.params.SeriesId;
-  const SeasonId = req.params.SeasonId;
-  const MessageId = req.params.MessageId;
-
-  const seriesObj = Series.find((x) => x.id === SeriesId);
-  const seasonObj = seriesObj.Seasons.find((x) => x.SeasonID == SeasonId);
-  res.json(seasonObj.Messages.find((x) => x.MessageID == MessageId));
-});
-
 
 app.get('/quiz/:id/data', (req, res) => {
   const id = req.params.id;
@@ -1008,4 +991,11 @@ app.get('/media/:id/audio', (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 5000);
+//connect to db
+mongoose.connect(process.env.MONG_URI).then(() => {
+  app.listen(process.env.PORT, () => {
+    console.log('Connection to DB established, listening on port', process.env.PORT)
+  });
+}).catch((error) => {
+  console.log(error);
+})
