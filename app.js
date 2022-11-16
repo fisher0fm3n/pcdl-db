@@ -893,7 +893,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use('/api/series', seriesRoutes);
+app.use('/api/series/', seriesRoutes);
 
 app.get('/media', (req, res) => res.json(media));
 
