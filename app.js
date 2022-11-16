@@ -914,8 +914,8 @@ app.get('/series/:id', (req, res) => {
 app.get('/series/:SeriesId/:SeasonId', (req, res) => {
   const SeriesId = req.params.SeriesId;
   const SeasonId = req.params.SeasonId;
-  const Series = Series.find((x) => x.id === SeriesId);
-  res.json(Series.Seasons.find((x) => x.SeasonID == SeasonId));
+  const SeriesObj = Series.find((x) => x.id === SeriesId);
+  res.json(SeriesObj.Seasons.find((x) => x.SeasonID == SeasonId));
 });
 
 app.get('/series/:SeriesId/:SeasonId/:MessageId', (req, res) => {
@@ -923,8 +923,8 @@ app.get('/series/:SeriesId/:SeasonId/:MessageId', (req, res) => {
   const SeasonId = req.params.SeasonId;
   const MessageId = req.params.MessageId;
 
-  const Series = Series.find((x) => x.id === SeriesId);
-  const seasonObj = Series.Seasons.find((x) => x.SeasonID == SeasonId);
+  const SeriesObj = Series.find((x) => x.id === SeriesId);
+  const seasonObj = SeriesObj.Seasons.find((x) => x.SeasonID == SeasonId);
   res.json(seasonObj.Messages.find((x) => x.MessageID == MessageId));
 });
 
