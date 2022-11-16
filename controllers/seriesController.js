@@ -27,11 +27,11 @@ res.status(200).json(series);
 
 //create
 const createSeries = async (req, res) => {
-  const {title, description, series, status, thumbnail, cover, author, captions, categories, seasons } = req.body;
+  const {title, description, type, status, thumbnail, cover, author, captions, categories, seasons } = req.body;
 
 //add doc to db
   try {
-    const seriesInstance  = await Series.create({title, description, series, status, thumbnail, cover, author, captions, categories, seasons })
+    const seriesInstance  = await Series.create({title, description, type, status, thumbnail, cover, author, captions, categories, seasons })
     res.status(200).json(seriesInstance)
   } catch(error) {
     res.status(400).json({error: error.message})

@@ -11,8 +11,8 @@ const seriesSchema = new Schema({
     type: String,
     required: true
   },
-  series:  {
-    type: Boolean,
+  type:  {
+    type: String,
     required: true
   },
   status:  {
