@@ -74,12 +74,29 @@ const updateSeries = async (req, res) => {
   res.status(200).json(series);
 }
 
+//update
+const updateSeason = async (req, res) => {
+  const { id } = req.params;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({error: 'No such series'})
+  }
 
+  const series = await Series.updateOne({_id: id}, {
+    seasons: req.body.seasons,
+  })
+
+  if (!series) {
+    return res.status(400).json({error: 'No such series'})
+  }
+
+  res.status(200).json(series);
+}
 
 module.exports = {
   createSeries,
   getSeriesCollection,
   getSeries,
   deleteSeries,
-  updateSeries
+  updateSeries,
+  updateSeason,
 }
