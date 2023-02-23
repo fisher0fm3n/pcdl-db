@@ -9,6 +9,14 @@ const mongoose = require('mongoose')
 const seriesRoutes = require('./routes/series');
 
 const lists = {
+  releases: [
+    '6376cd3fa0e1b5dc7443e41b',
+    '63eb7d1c962a9e45cd17eb28',
+    '63eb7de5962a9e45cd17eb32',
+    '63eb7e64962a9e45cd17eb34',
+    '63eb7f46962a9e45cd17eb3a',
+    '63eb81fd962a9e45cd17eb49',
+  ],
   new_releases: [
     'AtldiyT',
     'mtHq4hDv',
